@@ -1,0 +1,191 @@
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>宁夏大学图书馆</title>
+    <link href="/templates/ningxia/css/style.css" type="text/css" rel="stylesheet" />
+    <script src="/templates/ningxia/js/tab.js" type="text/javascript"></script>
+    <script src="/templates/ningxia/js/dropdown.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div class="top">
+    <div class="wrap">
+        <div class="wel">宁夏大学图书馆</div>
+        <div class="link"><a href="http://202.201.136.140:8080/reader/redr_info.php" target="_blank">个人信息</a>|<a href="http://www.nxu.edu.cn/" target="_blank">宁夏大学首页</a></div>
+    </div>
+</div><!--top-->
+
+<div class="logo" onclick="javascript:window.location='/'" style="cursor:pointer"><div class="wrap"></div></div><!--logo-->
+
+<div class="clear"></div>
+
+
+<div class="search">
+    <div class="wrap">
+        <ul class="seaTab">
+            <li class="sea_current" id="sea_nav5" onmouseover="javascript:doClick1(this)"><a href="#">馆藏目录</a></li>
+            <li class="sea_link" id="sea_nav1" onmouseover="javascript:doClick1(this)"><a href="#">e读</a></li>
+            <li class="sea_link" id="sea_nav2" onmouseover="javascript:doClick1(this)"><a href="#"><!--统一检索-->百链云</a></li>
+            <li class="sea_link" id="sea_nav3" onmouseover="javascript:doClick1(this)"><a href="#"><!--发现检索-->超星发现</a></li>
+            <li class="sea_link" id="sea_nav6" onmouseover="javascript:doClick1(this)"><a href="#"><!--百度学术知识发现-->百度发现</a></li>
+            <li class="sea_link" id="sea_nav4" onmouseover="javascript:doClick1(this)"><a href="#">我的图书馆</a></li>
+
+        </ul>
+        <div class="sea_down">
+            <div class="dis" id="sea_sub5">
+                <div class="ss">
+                    <form action="http://202.201.136.140:8080/opac/openlink.php" method="get" accept-charset="utf-8" target="_blank">
+                        <div class="tm2008style">
+
+                            <select name="strSearchType" class="select11 select_before">
+                                <option value="title">题名</option>
+                                <option value="author">著者</option>
+                                <option value="keyword"> 主题词</option>
+                                <option value="isbn">ISBN/ISSN</option>
+                                <option value="asordno">订购号</option>
+                                <option value="coden">分类号</option>
+                                <option value="callno">索书号</option>
+                                <option value="publisher">出版社</option>
+                                <option value="series">丛书名</option>
+                                <option value="tpinyin">题名拼音</option>
+                                <option value="apinyin">责任者拼音</option>
+                            </select>
+
+
+
+
+                        </div>
+
+                        <input name="strText" type="text" class="text" value="输入您要查找的关键词" onfocus="if(this.value=='输入您要查找的关键词')this.value=''"
+                               onblur="if(this.value=='')this.value='输入您要查找的关键词'" />
+                        <input style="display:none" type="text" name="orderby" value="desc" />
+                        <input style="display:none" type="text" name="sort" value="CATA_DATE" />
+                        <input style="display:none" type="text" name="showmode" value="list" />
+                        <input style="display:none" type="text" name="displaypg" value="20" />
+                        <input style="display:none" type="text" name="with_ebook" value="on" />
+                        <input style="display:none" type="text" name="location" value="ALL" />
+                        <input type="submit" class="but" value="检   索" />
+
+
+                        <div class="oppt" style="display:none">
+                            <input name="doctype" type="radio" value="ALL" checked="checked" />
+                            <label>所有书刊</label>
+                            <input name="doctype" type="radio" value="01" />
+                            <label>中文图书</label>
+                            <input name="doctype" type="radio" value="02" />
+                            <label>西文图书</label>
+                            <input name="doctype" type="radio" value="11" />
+                            <label>中文期刊</label>
+                            <input name="doctype" type="radio" value="12" />
+                            <label>西文期刊</label>
+                        </div>
+
+                        <div class="clear"></div>
+                    </form>
+                </div>
+
+                <div class="explain">说明：查询本馆馆藏书目</div>
+            </div>
+            <div class="dis" id="sea_sub1">
+                <div class="ss">
+                    <form action="http://www.yidu.edu.cn/educhina/educhina.do" target="_blank" method="get">
+                        <!--下拉框begin-->
+                        <div id="tm2008style">
+                            <select name="stype" id="stype">
+                                <option selected="selected" value="99">所 有 类 型</option>
+                                <option value="0">中 文 图 书</option>
+                                <option value="4">外 文 图 书</option>
+                                <option value="1">期 刊 文 章</option>
+                                <option value="5">中 文 期 刊</option>
+                                <option value="2">外 文 期 刊</option>
+                                <option value="3">学 位 论 文</option>
+                                <option value="6">特 藏 资 源</option>
+                            </select>
+                        </div>
+
+                        <input style="display:none" id="skey" name="skey" type="text" value="0" />
+                        <input style="display:none" id="s" name="s" type="text" value="on" />
+                        <!--下拉框end-->
+                        <input name="svalue" id="svalue" type="text" class="text" /><input name="" type="submit" class="but" value="检 索" />
+                    </form>
+                    <div class="clear"></div>
+
+                </div>
+                <div class="explain">说明：整合全国高校纸本资源和电子资源，揭示资源收藏与服务情况，通过一站式检索从海量资源中快速发现与获取有用的信息</div>
+            </div>
+            <div class="dis" id="sea_sub2">
+                <div>
+                    <iframe src="/templates/ningxia/search.html" width="634" height="110" scrolling="no" frameborder="0" marginheight="0" marginwidth="0" allowtransparency="true"></iframe>
+                    <div class="clear"></div>
+                </div>
+                <div class="explain">说明：百链是资源补缺型服务产品，可帮助读者找到、得到需要的资源</div>
+            </div>
+            <div class="dis" id="sea_sub3">
+                <form action="http://ss.zhizhen.com/s?sw=" method="get" target="_blank">
+                    <div class="ss">
+                        <input name="sw" id="sw" type="text" class="text2" />
+                        <input name="" type="submit" class="but" value="检 索" />
+                        <div class="clear"></div>
+                    </div>
+                </form>
+                <div class="explain">说明：基于海量元数据，利用数据仓储、资源整合、知识挖掘、数据分析、文献计量学模型等相关技术，完成高效、精准、统一的中文学术资源搜索</div>
+            </div>
+            <div class="dis" id="sea_sub6">
+                <form action="http://xueshu.baidu.com/s" method="GET" target="_blank" >
+                    <div class="ss">
+                        　　　　　　　    <input type="text" name="wd" class="text2" value="" />
+                        　　　　　　　    <input style="display:none" type="text" name="tn" value="SE_baiduxueshulib_9r82kicg" />
+                        　　　　　　　    <input style="display:none" type="text" name="sc_as_para" value="sc_lib:nxu" />
+                        　　　　　　　    <input style="display:none" type="text" name="sc_from" value="nxu" />
+                        　　　　　　　    <input type="submit" class="but" value="搜索" />
+                        <div class="clear"></div>
+                    </div>
+                </form>
+                <div class="explain">说明：百度学术知识发现</div>
+            </div>
+            <div class="dis" id="sea_sub4">
+                <form id="form1" name="form1" method="post" action="" class="loginbar">
+                    <div class="ss">
+                        <label for="name">用户名：</label>
+                        <input type="text" name="name" id="name" />
+
+                        <label for="password">密码：</label>
+                        <input type="password" name="password" id="password" />
+
+
+                        <input type="submit" name="login" id="login" value="登录" class="loginbtn" />
+                        <div class="clear"></div>
+                    </div>
+
+                </form>
+                <div class="explain">说明：查阅个人信息等</div>
+            </div>
+
+        </div>
+    </div>
+</div><!--search-->
+
+<div class="navOut">
+    <div class="wrap">
+        <ul class="nav">
+            <li class="nav_current" id="nav1" onmouseover="javascript:doClick2(this)"><a href="pageinfo?cid=32" class="icon1">本馆概况</a></li>
+            <li class="nav_link" id="nav2" onmouseover="javascript:doClick2(this)"><a href="newslist?cid=36" class="icon2">新闻公告</a></li>
+            <li class="nav_link" id="nav3" onmouseover="javascript:doClick2(this)"><a href="resources?cid=5" class="icon3">试用资源</a></li>
+            <li class="nav_link" id="nav4" onmouseover="javascript:doClick2(this)"><a href="resources?cid=6" class="icon4"><!--数据库导航-->数字化资源</a></li>
+            <li class="nav_link" id="nav5" onmouseover="javascript:doClick2(this)"><a href="newslist?cid=7" class="icon5">特色资源</a></li>
+            <li class="nav_link" id="nav6" onmouseover="javascript:doClick2(this)"><a href="newslist?cid=2041" class="icon6">读者服务</a></li>
+            <li class="nav_link" id="nav7" onmouseover="javascript:doClick2(this)"><a href="newslist?cid=18" class="icon7">CALIS服务</a></li>
+        </ul>
+        <div class="clear"></div>
+        <div class="nav_down">
+            <div class="dis" id="sub1">
+                <p>
+                    <script>
+                        var str='<p style="TEXT-ALIGN: left; LINE-HEIGHT: 150%; TEXT-INDENT: 37px"><span style="FONT-SIZE: 19px; FONT-FAMILY: 宋体; COLOR: black; LINE-HEIGHT: 150%">宁夏大学图书馆始建于1958年。1997年和2002年，原宁夏大学、宁夏工学院、银川师范高等专科学校(含宁夏教育学院)、宁夏农学院先后合并组建新的宁夏大学，原四校图书馆也随之合并为宁夏大学图书馆。</span></p><p style="TEXT-ALIGN: left; LINE-HEIGHT: 150%; TEXT-INDENT: 37px"><span style="FONT-SIZE: 19px; FONT-FAMILY: 宋体; COLOR: black; LINE-HEIGHT: 150%">图书馆现由怀远校区逸夫图书馆（一馆）、文萃校区文萃图书馆（二馆）和金凤校区图书馆(三馆)三部分组成，馆舍面积总计3.6万平方米。</span></p><p style="TEXT-ALIGN: left; LINE-HEIGHT: 150%; TEXT-INDENT: 37px"><span style="FONT-SIZE: 19px; FONT-FAMILY: 宋体; COLOR: black; LINE-HEIGHT: 150%">近几年来，图书馆的文献建设呈现出了可喜的发展势头。截止2018年12月，全校共有纸质文献194万册。其中，图书馆藏书148万册，各学院藏书46万册。图书馆藏有历代古籍和再造善本古籍近5万册，其中《汉石例》、《香南精舍金石契》两种善本先后入选《国家珍贵古籍名录》，经国务院批准，获得了文化部颁发的国家级珍贵古籍证书。目前图书馆正致力于古籍部的建设，积极推进馆藏古籍的保护、整理和科学利用。在电子文献资源建设方面，我馆现有中国知网（CNKI）、万方知识平台、超星读秀、超星百链云、超星中文发现系统、<span style="FONT-SIZE: 24px; FONT-FAMILY: 宋体">Elsevier SD、</span>Springer-Link、SCI、EI、Dialog等92个数据库；电子图书218万种；学术视频1.7万集。&nbsp; </span></p><p style="TEXT-ALIGN: left; LINE-HEIGHT: 150%; TEXT-INDENT: 37px"><span style="FONT-SIZE: 19px; FONT-FAMILY: 宋体; COLOR: black; LINE-HEIGHT: 150%">在图书管理和服务体系建设方面，我馆于2008年引进了江苏汇文图书管理系统，2013年进行了更新升级，进一步完善了图书采编和流通借阅工作。图书馆在各校区均建立了电子阅览室，向读者提供网络、光盘等电子信息的检索和咨询服务。为加强用户教育，图书馆还开设文献检索等课程，对新生进行培训，不断提高用户的信息检索与利用素养，切实做好读者服务。</span></p><p style="TEXT-ALIGN: left; LINE-HEIGHT: 150%; TEXT-INDENT: 37px"><span style="FONT-SIZE: 19px; FONT-FAMILY: 宋体; COLOR: black; LINE-HEIGHT: 150%">我馆重视文献资源共享、交流和学科服务工作。近些年来先后与上海交通大学图书馆、中国科学院文献情报中心、国家图书馆等单位开展了文献传递和馆际互借等业务活动。2009年，我馆通过CASHL(中国高校人文社会科学文献中心)传递文献数量位居西北五省（区）高校馆第一、全国高校馆第七。2010年和2012年我馆被评为“全区图书馆公共服务先进集体”。2013年，我馆组建了学科服务团队，并在部分学院培养了一批高素质的信息专员，对重点学科、重大科研项目提供有针对性的专业服务。</span></p><p style="TEXT-ALIGN: left; LINE-HEIGHT: 150%; TEXT-INDENT: 37px"><span style="FONT-SIZE: 19px; FONT-FAMILY: 宋体; COLOR: black; LINE-HEIGHT: 150%">我馆作为教育部图工委委员单位和宁夏高校图工委秘书处所在单位，多次成功组织了有利于推动图书馆建设的学术会议或活动。2009年顺利举办了第三届教育部高校图工委成立大会暨第一次工作会议， 2010年我馆承办了CASHL西北地区会议，2014年承办了“第七届图书馆管理与服务创新论坛”学术会议，2016年承办了“中国高校图书馆发展论坛”学术会议。2012年我馆建设的CALIS（中国高等教育文献保障系统）宁夏自治区文献信息服务中心，以优秀的成绩正式获得了国家中心的验收评估。我们将以此为契机推动全区高校图书馆文献资源共建共享工作蓬勃发展。</span></p><p><span style="FONT-SIZE: 19px; FONT-FAMILY: 宋体; COLOR: black">&nbsp;&nbsp;&nbsp; </span><span style="FONT-SIZE: 19px; FONT-FAMILY: 宋体; COLOR: black; LINE-HEIGHT: 150%">图书馆始终坚持“读者第一、服务育人、服务学科、为学校储藏能源与财富”的办馆理念，继续加强馆藏建设，优化馆内服务，深入院系开展学科服务，积极打造研究型、服务型、开放式、数字化、人性化的现代图书馆，力求把宁夏大学图书馆建成宁夏最权威的学术文献资料信息中心，建成师生乐意聚首其中探究学问的乐园。</span></p><p>&nbsp;</p>';
+                        document.write(str.replace(/<[^>]+?>/g, '').replace(/\n|\r/g, '').substring(0, 400) + "…");
+                    </script>
